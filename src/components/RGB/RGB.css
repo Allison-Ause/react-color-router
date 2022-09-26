@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
 .color-chip {
   align-items: center;
   display: flex;
   height: 95vh;
   justify-content: center;
   width: 100%;
+  color: white;
+  font-family: 'Amiri Quran', serif;
+  font-size: 1.5em;
 }

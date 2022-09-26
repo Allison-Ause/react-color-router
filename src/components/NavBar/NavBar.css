@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  background: linear-gradient(180.3deg, rgb(214, 224, 255) 37.2%, rgb(254, 168, 168) 137.3%);
+  height: 10vh;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 5px solid black;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.navlink {
+  text-decoration: none;
+}
+
+.navlink:visited {
+  color: black;
+}
+.active {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  font-size: 1.4em;
+}

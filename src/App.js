@@ -1,22 +1,15 @@
-import { NavLink, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
-// import Chocolate from './components/Chocolate/Chocolate';
+import NavBar from './components/NavBar/NavBar';
 import RGB from './components/RGB/RGB';
 
 function App() {
   return (
     <main>
-      <div className="navbar">
-        <NavLink to="/rgb/60/21/24">Chocolate</NavLink>
-        <NavLink to="/rgb/105/20/14">Chestnut</NavLink>
-        <NavLink to="/rgb/164/66/0">Gingersnap</NavLink>
-      </div>
+      <NavBar />
       <Switch>
         <Route path="/rgb/:r/:g/:b" component={RGB} />
-        {/* <Route path="/rgb/105/20/14" />
-        <Route path="/rgb/164/66/0" />
-        TODO: ADD 404 NOT FOUND ROUTE path="*"
-        */}
+        {/* TODO: ADD 404 NOT FOUND ROUTE path="*" */}
       </Switch>
     </main>
   );
