@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import './RGB.css';
 
 export default function RGB() {
   const { r, g, b } = useParams();
@@ -6,7 +7,7 @@ export default function RGB() {
   console.log(background);
 
   return (
-    <div style={{ backgroundColor: background }}>
+    <div style={{ backgroundColor: background }} className="color-chip">
       <h1>{`rgb(${r},${g},${b})`}</h1>
     </div>
   );
