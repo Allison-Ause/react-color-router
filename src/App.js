@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import { NavLink, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Chocolate from './components/Chocolate/Chocolate';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <div className="navbar">
+        <NavLink to="/rgb/60/21/24">Chocolate</NavLink>
+        <NavLink to="/rgb/105/20/14">Chestnut</NavLink>
+        <NavLink to="/rgb/164/66/0">Gingersnap</NavLink>
+      </div>
+      <Switch>
+        <Route path="/rgb/60/21/24" component={Chocolate} />
+        {/* <Route path="/rgb/105/20/14" />
+        <Route path="/rgb/164/66/0" />
+        TODO: ADD 404 NOT FOUND ROUTE path="*"
+        */}
+      </Switch>
+    </main>
   );
 }
 
