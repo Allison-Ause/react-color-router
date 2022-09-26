@@ -2,6 +2,7 @@ import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import RGB from './components/RGB/RGB';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <NavBar />
       <Switch>
         <Route path="/rgb/:r/:g/:b" component={RGB} />
-        {/* TODO: ADD 404 NOT FOUND ROUTE path="*" */}
+        <Route path="*" component={NotFound} />
       </Switch>
     </main>
   );
