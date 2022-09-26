@@ -1,6 +1,7 @@
 import { NavLink, Route, Switch } from 'react-router-dom';
 import './App.css';
-import Chocolate from './components/Chocolate/Chocolate';
+// import Chocolate from './components/Chocolate/Chocolate';
+import RGB from './components/RGB/RGB';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <NavLink to="/rgb/164/66/0">Gingersnap</NavLink>
       </div>
       <Switch>
-        <Route path="/rgb/60/21/24" component={Chocolate} />
+        <Route path="/rgb/:r/:g/:b" component={RGB} />
         {/* <Route path="/rgb/105/20/14" />
         <Route path="/rgb/164/66/0" />
         TODO: ADD 404 NOT FOUND ROUTE path="*"
