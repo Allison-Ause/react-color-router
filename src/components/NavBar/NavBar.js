@@ -1,9 +1,12 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import './NavBar.css';
 
 export default function NavBar() {
+  const { r, g, b } = useParams();
+  const currentColor = `rgb(${r},${g},${b})`;
+
   return (
-    <div className="navbar">
+    <div className="navbar" style={{ '--currentColor': currentColor }}>
       <NavLink to="/rgb/60/21/24" className="navlink">
         Chocolate
       </NavLink>

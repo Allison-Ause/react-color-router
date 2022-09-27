@@ -7,9 +7,11 @@ import NotFound from './components/NotFound/NotFound';
 function App() {
   return (
     <main>
-      <NavBar />
       <Switch>
-        <Route path="/rgb/:r/:g/:b" component={RGB} />
+        <Route path="/rgb/:r/:g/:b">
+          <NavBar />
+          <RGB />
+        </Route>
         <Route path="*" component={NotFound} />
       </Switch>
     </main>

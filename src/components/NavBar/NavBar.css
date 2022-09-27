@@ -17,13 +17,11 @@
 
 .navlink {
   text-decoration: none;
-}
-
-.navlink:visited {
   color: black;
 }
+
 .active {
   text-decoration: underline;
-  color: rgb(0, 0, 0);
+  color: var(--currentColor);
   font-size: 1.4em;
 }
