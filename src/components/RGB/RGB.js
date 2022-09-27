@@ -4,7 +4,7 @@ import 'animate.css';
 
 export default function RGB() {
   const { r, g, b } = useParams();
-  const currentColor = `rgb(${r},${g},${b})`;
+  const currentColor = `rgb ( ${r}, ${g}, ${b} )`;
 
   return (
     <div key={Math.random()} style={{ backgroundColor: currentColor }} className="color-chip">
