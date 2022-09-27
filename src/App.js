@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import RGB from './components/RGB/RGB';
@@ -8,6 +8,9 @@ function App() {
   return (
     <main>
       <Switch>
+        <Route exact path="/">
+          <Redirect to="/rgb/60/21/24" />
+        </Route>
         <Route path="/rgb/:r/:g/:b">
           <NavBar />
           <RGB />

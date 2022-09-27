@@ -1,6 +1,5 @@
 .navbar {
   display: flex;
-  /* background: linear-gradient(180.3deg, rgb(214, 224, 255) 37.2%, rgb(254, 168, 168) 137.3%); */
   background: radial-gradient(
     circle at 10% 20%,
     rgba(216, 241, 230, 0.46) 0.1%,
